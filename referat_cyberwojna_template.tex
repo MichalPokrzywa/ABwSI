@@ -1,0 +1,195 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage[backend=bibtex,maxbibnames=99]{biblatex}
+\usepackage{pgfplots}
+
+\pgfplotsset{compat=1.18}
+\bibliography{biblio}
+\geometry{margin=2.5cm}
+\setstretch{1.5}
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0.35em}
+\DeclareDelimFormat{multinamedelim}{\addcomma\space}
+\DeclareDelimFormat{finalnamedelim}{\addcomma\space}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    citecolor=black,
+    pdftitle={Referat o cyberwojnie i atakach państwowych},
+    pdfauthor={Autor 1, Autor 2, Autor 3, Autor 4}
+}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+
+    \includegraphics[width=6.2cm]{politechnika_sl_logo_bw_pion_pl.pdf}
+
+
+    {\LARGE \textbf{REFERAT}\par}
+    \vspace{1.2cm}
+
+    {\huge \textbf{Cyberwojna oraz ataki państwowe}\par}
+    \vspace{1.2cm}
+
+
+    {\large \textbf{Kierunek:} Cyberbezpieczeństwo\par}
+    {\large \textbf{Przedmiot:} Aspekty bezpieczeństwa w społeczeństwie informacyjnym\par}
+    \vspace{1.2cm}
+
+    {\large \textbf{Autorzy:}\par}
+
+    {\large Mgr inż Michał Pokrzywa, Inż. Kacper Sikorski, Inż. Mateusz Falfus, Inż. Oskar Sobolewski\par}
+
+    \vfill
+    \vspace{0.35cm}
+    {\large \textbf{Katowice, 2026}\par}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Wstęp}
+Cyberwojna stanowi jeden z najważniejszych obszarów współczesnego bezpieczeństwa informacyjnego. W literaturze pojęcie to odnosi się do działań prowadzonych w cyberprzestrzeni, których celem jest uzyskanie przewagi strategicznej, osłabienie przeciwnika lub wpływanie na jego zdolność do funkcjonowania. W odróżnieniu od klasycznych konfliktów zbrojnych, cyberwojna może obejmować zarówno działania jawne, jak i ukryte, a jej skutki często wykraczają poza samą infrastrukturę techniczną\footnote{Przypis bibliograficzny należy dodać tutaj, np. w formie tradycyjnej lub poprzez styl przypisów stosowany na uczelni.}.
+
+Ataki państwowe to działania prowadzone bezpośrednio przez państwo lub z jego wsparciem, ukierunkowane na inne państwa, organizacje krytyczne lub społeczeństwo obywatelskie. Mogą przyjmować formę sabotażu systemów informatycznych, operacji dezinformacyjnych, szpiegostwa cyfrowego, a także prób destabilizacji procesu decyzyjnego przeciwnika. W tym referacie zostaną omówione podstawowe definicje, a następnie cztery studia przypadków ilustrujące praktyczne zastosowanie cybernarzędzi w działaniach państwowych.
+
+\subsection{Cel i zakres pracy}
+Celem pracy jest uporządkowanie pojęć związanych z cyberwojną i atakami państwowymi oraz przedstawienie ich na przykładach konkretnych incydentów. Zakres pracy obejmuje:
+\begin{itemize}[leftmargin=1.5cm]
+    \item definicje i podstawowe rozróżnienia pojęciowe,
+    \item opis charakterystyki cyberataków prowadzonych przez podmioty państwowe,
+    \item analizę czterech wybranych przypadków,
+    \item podsumowanie głównych wniosków.
+\end{itemize}
+
+\subsection{Miejsce na elementy graficzne}
+W tej pracy można wstawiać przypisy, zdjęcia, wykresy i inne materiały pomocnicze. Poniżej znajduje się przykładowy szablon dla grafiki:
+
+Przykładowe odwołanie do źródła w tekście wygląda tak: \cite{bib:delaherche2012}.
+
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox[c][5cm][c]{0.8\textwidth}{\centering Miejsce na zdjęcie lub ilustrację.\newline
+    Wstaw plik przez \texttt{\string\includegraphics[...]} z pliku w folderze \texttt{images/}}}
+    \caption{Przykładowe miejsce na ilustrację}
+    \label{fig:placeholder}
+\end{figure}
+
+\section{Pojęcie cyberwojny i ataków państwowych}
+Cyberwojna to zbiór działań w cyberprzestrzeni prowadzonych w celu osiągnięcia skutków politycznych, militarnych lub strategicznych. Nie ogranicza się ona wyłącznie do niszczenia systemów, lecz obejmuje także rozpoznanie, infiltrację, sabotaż, manipulację informacją oraz oddziaływanie psychologiczne. W praktyce granica między cyberwojną, cyberterroryzmem, szpiegostwem a zwykłą przestępczością bywa nieostra.
+
+Ataki państwowe cechują się zwykle wyższym poziomem organizacji, dłuższym czasem przygotowania oraz wykorzystaniem zaawansowanych narzędzi i podatności typu zero-day. Ich celem mogą być m.in. sieci energetyczne, systemy finansowe, administracja publiczna, media lub infrastruktura wojskowa. W wielu przypadkach skutki takich operacji są odczuwalne również dla społeczeństwa cywilnego.
+
+\subsection{Wykresy i dane}
+Jeśli w pracy pojawi się analiza danych, można wykorzystać wykresy. Poniżej przykład szablonu wykresu:
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            width=0.85\textwidth,
+            height=7cm,
+            ybar,
+            bar width=18pt,
+            ymin=0,
+            symbolic x coords={Incydent 1,Incydent 2,Incydent 3,Incydent 4},
+            xtick=data,
+            ylabel={Skala oddziaływania},
+            xlabel={Studium przypadku},
+            nodes near coords,
+            nodes near coords align={vertical},
+            axis lines*=left,
+            enlarge x limits=0.2
+        ]
+            \addplot coordinates {(Incydent 1,0) (Incydent 2,0) (Incydent 3,0) (Incydent 4,0)};
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Szablon wykresu do uzupełnienia danymi}
+    \label{fig:chart-placeholder}
+\end{figure}
+
+\section{Studium przypadku 1}
+W tym rozdziale należy opisać pierwszy wybrany przypadek. Wskazane jest uwzględnienie tła politycznego, przebiegu zdarzeń, zastosowanych technik ataku oraz skutków operacji. Warto również ocenić konsekwencje dla infrastruktury krytycznej, społeczeństwa oraz relacji międzynarodowych.
+
+W analizie można odwołać się do literatury, raportów instytucji bezpieczeństwa oraz materiałów prasowych\footnote{Tu należy wstawić właściwy przypis bibliograficzny.}. Można także dodać tabelę zestawiającą najważniejsze cechy incydentu:
+
+\begin{table}[H]
+    \centering
+    \caption{Zestawienie kluczowych informacji o przypadku 1}
+    \begin{tabular}{p{5cm}p{8cm}}
+        \toprule
+        Element & Opis \\
+        \midrule
+        Podmiot atakujący & Do uzupełnienia \\
+        Cel ataku & Do uzupełnienia \\
+        Zastosowana technika & Do uzupełnienia \\
+        Skutki & Do uzupełnienia \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{Studium przypadku 2}
+Drugi przypadek powinien pokazywać inny aspekt cyberwojny, na przykład atak na systemy przemysłowe, kampanię szpiegowską lub operację wpływu. Analiza powinna obejmować zarówno aspekt techniczny, jak i strategiczny. Warto wskazać, jakie wnioski dla bezpieczeństwa państwa płyną z danego incydentu.
+
+\subsection{Analiza skutków}
+Tutaj można opisać:
+\begin{itemize}[leftmargin=1.5cm]
+    \item wpływ na administrację lub infrastrukturę,
+    \item reakcję państwa lub organizacji międzynarodowych,
+    \item znaczenie dla polityki bezpieczeństwa,
+    \item możliwe działania prewencyjne.
+\end{itemize}
+
+\section{Studium przypadku 3}
+Trzeci rozdział można poświęcić przykładowi operacji, która łączyła komponent techniczny z informacyjnym, na przykład atak ransomware sponsorowany pośrednio przez państwo, kampanię dezinformacyjną lub zakłócenie łańcucha dostaw oprogramowania. W tym miejscu warto pokazać, że cyberwojna nie musi oznaczać wyłącznie fizycznego zniszczenia systemów, lecz także długotrwałe osłabianie zaufania do instytucji.
+
+\subsection{Przykład wstawiania przypisów}
+Tekst \cite{bib:delaherche2012} z przypisem powinien mieć logiczne oparcie w źródłach\footnote{Przypis może zawierać pełny opis publikacji albo odesłanie skrócone do bibliografii, zgodnie z wymaganiami prowadzącego.}.
+
+\section{Studium przypadku 4}
+Czwarty przypadek może dotyczyć operacji wymierzonej w wybory, media, energetykę, bankowość albo komunikację państwową. Przy opisie należy wskazać motywację agresora, narzędzia użyte w ataku oraz końcowy efekt strategiczny. Można również porównać ten przypadek z wcześniejszymi rozdziałami, aby wykazać podobieństwa i różnice.
+
+\subsection{Miejsce na porównanie}
+\begin{table}[H]
+    \centering
+    \caption{Porównanie wybranych przypadków}
+    \begin{tabular}{p{3.5cm}p{3.5cm}p{3.5cm}p{3.5cm}}
+        \toprule
+        Cecha & Przypadek 1 & Przypadek 2 & Przypadek 3/4 \\
+        \midrule
+        Skala & Do uzupełnienia & Do uzupełnienia & Do uzupełnienia \\
+        Cel & Do uzupełnienia & Do uzupełnienia & Do uzupełnienia \\
+        Skutek & Do uzupełnienia & Do uzupełnienia & Do uzupełnienia \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{Zakończenie}
+Cyberwojna i ataki państwowe są dziś jednym z najpoważniejszych wyzwań bezpieczeństwa w społeczeństwie informacyjnym. Ich charakter sprawia, że granice między czasem pokoju a konfliktem stają się coraz mniej wyraźne. Przedstawione definicje oraz studia przypadków pokazują, że skuteczna obrona wymaga nie tylko technologii, lecz także współpracy instytucjonalnej, odpowiednich procedur oraz świadomości społecznej.
+
+Wnioskiem końcowym jest to, że państwa muszą rozwijać zdolności obrony cybernetycznej równolegle z analizą zagrożeń hybrydowych, ponieważ współczesne ataki bardzo często łączą komponent techniczny, informacyjny i psychologiczny. Z perspektywy bezpieczeństwa publicznego kluczowe są: monitoring, szybka reakcja, edukacja oraz odporność infrastruktury krytycznej.
+
+\printbibliography[title={Bibliografia}]
+
+\end{document}
